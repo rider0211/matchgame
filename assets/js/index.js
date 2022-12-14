@@ -1,0 +1,10 @@
+$(document).ready(function(){
+  $(".search").click(function(){
+    $(this).hide();
+    $(".search_input").show();
+  });
+  $(".search_input").mouseleave(function(){
+    $(this).hide();
+    $(".search").show();
+  });
+});
