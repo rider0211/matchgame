@@ -63,10 +63,17 @@ body{
 
     background: #FFFFFF;
     border-radius: 125px;
-
+    border: 2px solid #3699F4;
     height: 48px;
-    border-width: 0px;
 
+}
+.login_button:hover{
+    background: #3699F4;
+    color: white;
+    border: 2px solid white
+}
+.login_button:hover > .logtitle {
+    color:white;
 }
 .logtitle{
     width: 43px;
@@ -119,13 +126,13 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px 0px 16px;
     gap: 10px;
     background: #E6E8FF;
     border: 1px solid #3699F4;
     border-radius: 12px;
     width:100%;
     height: 48px;
+
 }
 .frame23{
     display: flex;
@@ -144,7 +151,7 @@ body{
 .rectangle{
     width: 16px;
     height: 48px;
-    background: #3699F4;
+    background: #CECECE;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     display: none;
@@ -155,11 +162,11 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px 0px 16px;
     gap: 10px;
     height:48px;
+    padding: 0px 0px 0px 16px;
 }
-.frame15:hover {
+.frame15:hover{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -167,17 +174,43 @@ body{
     align-items: center;
     padding: 0px 0px 0px 16px;
     gap: 10px;
-    background: #E6E8FF;
-    border: 1px solid #3699F4;
+    background: #EFEFEF;
+    border: 1px solid #CECECE;
     border-radius: 12px;
     width:100%;
     height: 48px;
 }
+.menubar{
+    width: 100%;
+    text-decoration:none;
+}
+.menubar:active{
+    color: #000000;
+}
+.frame15_active {
+    box-sizing: border-box;!important;
+    display: flex;!important;
+    flex-direction: row;!important;
+    justify-content: space-between;!important;
+    align-items: center;!important;
+    padding: 0px 0px 0px 16px;!important;
+    gap: 10px;!important;
+    background: #E6E8FF;!important;
+    border: 1px solid #3699F4;!important;
+    border-radius: 12px;!important;
+    width:100%;!important;
+    height: 48px;!important;
+}
 .frame15:hover > .rectangle{
+    background: #CECECE;!important;
     display: block;
 }
-
+.frame15_active > .rectangle {
+    display: block; 
+    background: #3699F4;
+}
 .slide_title{
+    color:#333333;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -195,7 +228,7 @@ body{
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 54px;
+    gap: 24px;
 }
 .fra17_title{
     font-family: 'Poppins';
@@ -349,7 +382,8 @@ body{
     align-items: center;
 }
 .search_input{
-    display: none;
+    display: flex;
+    flex-direction: row-reverse;
     position: relative;
 }
 
@@ -357,17 +391,21 @@ input.nosubmit {
   background: #FFFFFF;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
   border-radius: 90px;
-  width: 260px;
+  width: 48px;
   height: 48px;
   border: 1px solid #FFFFFF;
   display: block;
-  padding: 9px 4px 9px 40px;
-
+  padding: 9px 40px 9px 12px;
+    -webkit-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+input.nosubmit:hover {
+  width: 100%;
 }
 .search_img{
     position: absolute;
-   top:15px;
-   left:10px;
+   top:16px;
+   right:16px;
 }
 .frame13{
     display: flex;
